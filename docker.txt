@@ -1,0 +1,6 @@
+ubuntu@ip-172-31-26-71:~/two-tier-app$  
+ubuntu@ip-172-31-26-71:~/two-tier-app$ docker rm -vf $(docker ps -aq)
+0e9c0cb20fe9
+2b2376aeba84
+ubuntu@ip-172-31-26-71:~/two-tier-app$ sudo docker rmi -f $(sudo docker images -a -q)
+Untagged: two-tier-app_backend:latest
